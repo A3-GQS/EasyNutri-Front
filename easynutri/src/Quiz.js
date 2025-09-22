@@ -131,8 +131,8 @@ export default function QuizPage({ onFinish }) {
                     descricao: "Exclui carnes, focando em vegetais e grãos, inclui ovos e derivados de leite.",
                   },
                   {
-                    img: "/imagens/embreve.png",
-                    nome: "Antiinflamatória",
+                    img: "/imagens/Fire.gif",
+                    nome: "Anti-Inflamatória",
                     descricao: "Dieta 100% focada na desinflamação corporal.",
                   },
                   {
