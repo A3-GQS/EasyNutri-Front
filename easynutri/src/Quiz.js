@@ -132,12 +132,12 @@ export default function QuizPage({ onFinish }) {
                   },
                   {
                     img: "/imagens/embreve.png",
-                    nome: "Vegana",
-                    descricao: "EM BREVE!! Sem qualquer produto de origem animal.",
+                    nome: "Antiinflamatória",
+                    descricao: "Dieta 100% focada na desinflamação corporal.",
                   },
                   {
                     img: "/imagens/embreve.png",
-                    nome: "Dieta Flexível",
+                    nome: "Vegana",
                     descricao: "EM BREVE!! Permite variedade com foco em equilíbrio calórico.",
                   },
                   {
