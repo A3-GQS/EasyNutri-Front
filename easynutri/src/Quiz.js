@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './Quiz.css';
 import { FaChevronRight } from "react-icons/fa";
+import { FaArrowLeft } from "react-icons/fa";
 import PaginaDeVendas from "./PaginaDeVendas";
 import Wpp from './wpp';
 import Checkout from "./checkout";
@@ -42,6 +43,7 @@ export default function QuizPage({ onFinish }) {
   const [alergiasSelecionadas, setAlergiasSelecionadas] = useState(
     userData.alergiasComuns ? userData.alergiasComuns.split(",") : []
   );
+  
 
   const renderStepContent = () => {
     switch (step) {
@@ -906,5 +908,19 @@ export default function QuizPage({ onFinish }) {
     }
   };
 
-  return <div className="quiz-container">{renderStepContent()}</div>;
+  return (
+  <div className="quiz-container">
+    {/* Botão de voltar */}
+    {step > 0 && (
+      <button
+        className="btn-voltar"
+        onClick={prevStep}
+      >
+        <FaArrowLeft />
+      </button>
+    )}
+
+    {renderStepContent()}
+  </div>
+);
 }
